@@ -10,7 +10,9 @@ function ClozeCard(text, cloze) {
 // console.log(card);
 // //module export
 module.exports = ClozeCard;
- 
+var cloze = "Who was the first president of the United States?";
+var partial = "... was the first president of the United States.";
+var fullText = "George Washington was the first president of the United States.";
  //constructor functions
 var firstPresidentCloze = new ClozeCard
 ClozeCard.prototype.clozeIt = function() {
