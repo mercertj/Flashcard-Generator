@@ -11,19 +11,23 @@ function ClozeCard(text, cloze) {
 // //module export
 module.exports = ClozeCard;
  
- //constructor function
+ //constructor functions
 var firstPresidentCloze = new ClozeCard
-CardClozed.prototype.clozeIt = function() {
-	console.log(first)
+ClozeCard.prototype.clozeIt = function() {
+	console.log(this)
 }
-
-
-// function Card = {
-// 	Card.prototype.cloze = "George Washington";
-// 	Card.prototype.partial = "... was the first president of the United States.";
-// 	Card.prototype.fullText = "George Washington was the first president of the United States."
+new ClozeCard();
+  console.log(this);
+//runs the different responses to questions
+CardOperation = function Card() {
+	Card.prototype.cloze = "Who was the first president of the United States?",
+	  console.log(this.text, this.cloze);
+	Card.prototype.partial = "... was the first president of the United States.",
+	  console.log(this.text, this.cloze);
+	Card.prototype.fullText = "George Washington was the first president of the United States.",
+	  console.log()
 	
-// };
+};
 
 
 //checking for errors
